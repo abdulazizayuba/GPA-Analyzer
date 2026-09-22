@@ -1,0 +1,21 @@
+semester,course,units,grade
+1,Mathematics,3,A
+1,Programming,3,B
+1,Physics,2,C
+1,English,2,A
+1,Computer Fundamentals,3,B
+2,Database Systems,3,B
+2,Statistics,3,A
+2,Web Development,3,B
+2,Software Engineering,3,A
+2,Computer Networks,2,B
+3,Data Structures,3,A
+3,Operating Systems,3,B
+3,Software Engineering,3,A
+3,Database Systems,3,B
+3,Web Development,3,A
+4,Artificial Intelligence,3,B
+4,Mobile Development,3,A
+4,Computer Security,3,B
+4,Project Management,2,A
+4,Human Computer Interaction,3,A
