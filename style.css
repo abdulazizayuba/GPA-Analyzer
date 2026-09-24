@@ -1,0 +1,960 @@
+/* =========================================================
+   GPA ANALYZER & PREDICTOR
+   Professional Streamlit Theme
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+   html,
+   body,
+   [class*="css"] {
+       font-family: "Inter", "Segoe UI", Arial, sans-serif;
+   }
+   
+   /* =========================================================
+   PREMIUM MAIN PAGE BACKGROUND
+   ========================================================= */
+
+.stApp {
+    min-height: 100vh;
+
+    background:
+    radial-gradient(
+        circle at 0% 0%,
+        rgba(59, 130, 246, 0.45) 0%,
+        rgba(59, 130, 246, 0.25) 18%,
+        rgba(59, 130, 246, 0.10) 35%,
+        transparent 60%
+    ),
+    radial-gradient(
+        circle at 100% 5%,
+        rgba(99, 102, 241, 0.28) 0%,
+        rgba(99, 102, 241, 0.14) 20%,
+        rgba(99, 102, 241, 0.05) 40%,
+        transparent 65%
+    ),
+    radial-gradient(
+        circle at 80% 90%,
+        rgba(59, 130, 246, 0.18) 0%,
+        rgba(59, 130, 246, 0.07) 25%,
+        transparent 60%
+    ),
+    linear-gradient(
+        135deg,
+        #ffffff 0%,
+        #f8faff 35%,
+        #f2f6ff 65%,
+        #f7f8ff 100%
+    );
+
+    background-attachment: fixed;
+}
+
+
+/* Make sure the glow remains visible */
+
+[data-testid="stAppViewContainer"] {
+    background: transparent !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+
+/* Main content area */
+
+.block-container {
+    position: relative;
+    z-index: 1;
+}
+   
+   
+   /* =========================================================
+      SIDEBAR
+      ========================================================= */
+   
+   section[data-testid="stSidebar"] {
+       background: #0b1120;
+       border-right: 1px solid rgba(255, 255, 255, 0.06);
+   }
+   
+   section[data-testid="stSidebar"] > div {
+       background:
+           radial-gradient(
+               circle at 15% 0%,
+               rgba(59, 130, 246, 0.14),
+               transparent 30%
+           ),
+           linear-gradient(
+               180deg,
+               #0b1120 0%,
+               #101827 55%,
+               #0f172a 100%
+           );
+   }
+   
+   section[data-testid="stSidebar"] .block-container {
+       padding-top: 1.4rem;
+   }
+   
+   
+   /* =========================================================
+      SIDEBAR BRAND
+      ========================================================= */
+   
+   .sidebar-brand {
+       position: relative;
+   
+       padding: 20px 18px;
+       margin-bottom: 25px;
+   
+       background:
+           linear-gradient(
+               135deg,
+               rgba(37, 99, 235, 0.28),
+               rgba(79, 70, 229, 0.20)
+           );
+   
+       border: 1px solid rgba(147, 197, 253, 0.14);
+       border-radius: 16px;
+   
+       box-shadow:
+           0 10px 30px rgba(0, 0, 0, 0.18);
+   }
+   
+   .sidebar-brand-title {
+       color: #ffffff;
+   
+       font-size: 21px;
+       font-weight: 750;
+   
+       letter-spacing: -0.4px;
+   }
+   
+   .sidebar-brand-subtitle {
+       display: block;
+   
+       margin: 6px 0 0 0;
+   
+       color: #a8b5c7;
+   
+       font-size: 12px;
+       font-weight: 450;
+   
+       line-height: 1.4;
+   }
+   
+   
+   /* =========================================================
+      SIDEBAR SECTION TITLES
+      ========================================================= */
+   
+   .sidebar-section-title {
+       margin: 8px 4px 10px 4px;
+   
+       color: #718096;
+   
+       font-size: 11px;
+       font-weight: 750;
+   
+       letter-spacing: 1.3px;
+   }
+   
+   
+   /* =========================================================
+      RADIO GROUP
+      ========================================================= */
+   
+   section[data-testid="stSidebar"] .stRadio > label {
+       display: none;
+   }
+   
+   section[data-testid="stSidebar"] .stRadio div[role="radiogroup"] {
+       gap: 5px;
+   }
+   
+   
+   /* =========================================================
+      RADIO ITEMS
+      ========================================================= */
+   
+   section[data-testid="stSidebar"]
+   .stRadio div[role="radiogroup"] label {
+   
+       position: relative;
+   
+       display: flex;
+       align-items: center;
+   
+       min-height: 43px;
+   
+       padding: 10px 13px;
+   
+       margin: 2px 0;
+   
+       border-radius: 10px;
+   
+       color: #aab6c7 !important;
+   
+       background: transparent;
+   
+       border: 1px solid transparent;
+   
+       transition:
+           background 0.18s ease,
+           color 0.18s ease,
+           border 0.18s ease,
+           transform 0.18s ease;
+   }
+   
+   
+   /* Hide radio circle */
+   
+   section[data-testid="stSidebar"]
+   .stRadio div[role="radiogroup"]
+   label > div:first-child {
+   
+       display: none;
+   }
+   
+   
+   /* Radio text */
+   
+   section[data-testid="stSidebar"]
+   .stRadio div[role="radiogroup"]
+   label p {
+   
+       font-size: 14px !important;
+   
+       font-weight: 550 !important;
+   
+       margin: 0 !important;
+   
+       color: inherit !important;
+   }
+   
+   
+   /* Hover */
+   
+   section[data-testid="stSidebar"]
+   .stRadio div[role="radiogroup"]
+   label:hover {
+   
+       background: rgba(255, 255, 255, 0.055);
+   
+       color: #ffffff !important;
+   
+       transform: translateX(2px);
+   }
+   
+   
+   /* =========================================================
+      ACTIVE NAVIGATION ITEM
+      ========================================================= */
+   
+   section[data-testid="stSidebar"]
+   .stRadio div[role="radiogroup"]
+   label:has(input:checked) {
+   
+       background:
+           linear-gradient(
+               90deg,
+               rgba(37, 99, 235, 0.28),
+               rgba(79, 70, 229, 0.18)
+           );
+   
+       border: 1px solid rgba(96, 165, 250, 0.20);
+   
+       color: #ffffff !important;
+   
+       box-shadow:
+           inset 3px 0 0 #60a5fa,
+           0 4px 15px rgba(37, 99, 235, 0.08);
+   }
+   
+   
+   /* =========================================================
+      DATA SOURCE
+      ========================================================= */
+   
+   section[data-testid="stSidebar"]
+   .stRadio:nth-of-type(1)
+   div[role="radiogroup"]
+   label {
+   
+       background: rgba(255, 255, 255, 0.025);
+   
+       border: 1px solid rgba(255, 255, 255, 0.05);
+   
+       min-height: 42px;
+   }
+   
+   
+   /* Data source text */
+   
+   section[data-testid="stSidebar"]
+   .stRadio:nth-of-type(1)
+   div[role="radiogroup"]
+   label p {
+   
+       font-size: 13px !important;
+   
+       font-weight: 500 !important;
+   }
+   
+   
+   /* Data source hover */
+   
+   section[data-testid="stSidebar"]
+   .stRadio:nth-of-type(1)
+   div[role="radiogroup"]
+   label:hover {
+   
+       background: rgba(59, 130, 246, 0.10);
+   
+       border-color: rgba(96, 165, 250, 0.15);
+   }
+   
+   
+   /* Selected data source */
+   
+   section[data-testid="stSidebar"]
+   .stRadio:nth-of-type(1)
+   div[role="radiogroup"]
+   label:has(input:checked) {
+   
+       background: rgba(37, 99, 235, 0.14);
+   
+       border-color: rgba(96, 165, 250, 0.25);
+   
+       color: #ffffff !important;
+   }
+   
+   
+   /* =========================================================
+      CURRENT DATA SOURCE BADGE
+      ========================================================= */
+   
+   .selected-source {
+   
+       display: flex;
+   
+       align-items: center;
+   
+       gap: 8px;
+   
+       margin: 8px 2px 12px 2px;
+   
+       padding: 7px 10px;
+   
+       border-radius: 8px;
+   
+       background: rgba(34, 197, 94, 0.07);
+   
+       border: 1px solid rgba(34, 197, 94, 0.14);
+   
+       color: #9caec2;
+   
+       font-size: 11px;
+   
+       font-weight: 500;
+   }
+   
+   .source-check {
+   
+       display: flex;
+   
+       align-items: center;
+   
+       justify-content: center;
+   
+       width: 18px;
+       height: 18px;
+   
+       border-radius: 50%;
+   
+       background: rgba(34, 197, 94, 0.18);
+   
+       color: #86efac;
+   
+       font-size: 11px;
+   
+       font-weight: 800;
+   }
+   
+   
+   /* =========================================================
+      SIDEBAR DIVIDER
+      ========================================================= */
+   
+   .sidebar-divider {
+   
+       height: 1px;
+   
+       margin: 18px 2px;
+   
+       background: rgba(255, 255, 255, 0.07);
+   }
+   
+   
+   /* =========================================================
+      FILE UPLOADER
+      ========================================================= */
+   
+   section[data-testid="stSidebar"]
+   [data-testid="stFileUploader"] {
+   
+       margin-top: 8px;
+   
+       padding: 8px;
+   
+       background: rgba(255, 255, 255, 0.025);
+   
+       border: 1px solid rgba(255, 255, 255, 0.07);
+   
+       border-radius: 10px;
+   }
+   
+   
+   /* =========================================================
+      SIDEBAR FOOTER
+      ========================================================= */
+   
+   .sidebar-footer {
+   
+       margin-top: 28px;
+   
+       padding: 14px;
+   
+       text-align: center;
+   
+       border-radius: 11px;
+   
+       background: rgba(255, 255, 255, 0.025);
+   
+       border: 1px solid rgba(255, 255, 255, 0.05);
+   }
+   
+   .sidebar-footer strong {
+   
+       display: block;
+   
+       color: #cbd5e1;
+   
+       font-size: 11px;
+   
+       font-weight: 700;
+   }
+   
+   .sidebar-footer small {
+   
+       display: block;
+   
+       margin-top: 5px;
+   
+       color: #64748b;
+   
+       font-size: 10px;
+   }
+   
+   
+   /* =========================================================
+      METRIC CARDS
+      ========================================================= */
+   
+   .metric-card {
+   
+       background: #ffffff;
+   
+       border: 1px solid #e5e7eb;
+   
+       border-radius: 14px;
+   
+       padding: 22px 22px 20px 22px;
+   
+       min-height: 125px;
+   
+       box-shadow:
+           0 3px 12px rgba(15, 23, 42, 0.04);
+   
+       transition:
+           transform 0.2s ease,
+           box-shadow 0.2s ease;
+   }
+   
+   .metric-card:hover {
+   
+       transform: translateY(-2px);
+   
+       box-shadow:
+           0 8px 24px rgba(15, 23, 42, 0.08);
+   }
+   
+   .metric-label {
+   
+       font-size: 13px;
+   
+       font-weight: 600;
+   
+       color: #6b7280;
+   
+       text-transform: uppercase;
+   
+       letter-spacing: 0.5px;
+   }
+   
+   .metric-value {
+   
+       font-size: 32px;
+   
+       font-weight: 750;
+   
+       color: #111827;
+   
+       margin-top: 8px;
+   
+       line-height: 1.1;
+   }
+   
+   .metric-description {
+   
+       font-size: 12px;
+   
+       color: #9ca3af;
+   
+       margin-top: 8px;
+   }
+   
+   
+   /* =========================================================
+      PRIMARY CGPA CARD
+      ========================================================= */
+   
+   .cgpa-card {
+   
+       background:
+           linear-gradient(
+               135deg,
+               #172554,
+               #312e81
+           );
+   
+       border: none;
+   
+       color: white;
+   }
+   
+   .cgpa-card .metric-label,
+   .cgpa-card .metric-value,
+   .cgpa-card .metric-description {
+   
+       color: white;
+   }
+   
+   .cgpa-card .metric-description {
+   
+       opacity: 0.75;
+   }
+   
+   .cgpa-value {
+   
+       font-size: 42px;
+   
+       font-weight: 800;
+   
+       margin-top: 7px;
+   }
+   
+   
+   /* =========================================================
+      GENERAL CONTENT CARDS
+      ========================================================= */
+   
+   .content-card {
+   
+       background: #ffffff;
+   
+       border: 1px solid #e5e7eb;
+   
+       border-radius: 14px;
+   
+       padding: 24px;
+   
+       margin-bottom: 22px;
+   
+       box-shadow:
+           0 3px 12px rgba(15, 23, 42, 0.035);
+   }
+   
+   
+   /* =========================================================
+      DASHBOARD BANNER
+      ========================================================= */
+   
+   .dashboard-banner {
+   
+       background:
+           linear-gradient(
+               135deg,
+               #111827 0%,
+               #1e3a8a 55%,
+               #312e81 100%
+           );
+   
+       border-radius: 18px;
+   
+       padding: 30px 32px;
+   
+       margin-bottom: 25px;
+   
+       color: white;
+   
+       box-shadow:
+           0 10px 30px rgba(30, 58, 138, 0.18);
+   }
+   
+   .dashboard-banner h1 {
+   
+       margin: 0;
+   
+       color: white;
+   
+       font-size: 30px;
+   
+       font-weight: 750;
+   }
+   
+   .dashboard-banner p {
+   
+       margin: 8px 0 0 0;
+   
+       color: #dbeafe;
+   
+       font-size: 14px;
+   }
+   
+   
+   /* =========================================================
+      BUTTONS
+      ========================================================= */
+   
+   .stButton > button {
+   
+       border-radius: 9px;
+   
+       border: 1px solid #d1d5db;
+   
+       min-height: 42px;
+   
+       font-weight: 600;
+   
+       transition:
+           all 0.2s ease;
+   }
+   
+   .stButton > button:hover {
+   
+       transform: translateY(-1px);
+   }
+   
+   .stButton > button[kind="primary"] {
+   
+       background: #1d4ed8;
+   
+       border-color: #1d4ed8;
+   
+       color: white;
+   }
+   
+   .stButton > button[kind="primary"]:hover {
+   
+       background: #1e40af;
+   
+       border-color: #1e40af;
+   }
+   
+   
+   /* =========================================================
+      INPUTS
+      ========================================================= */
+   
+   .stTextInput input,
+   .stNumberInput input,
+   .stSelectbox div[data-baseweb="select"] > div,
+   .stTextArea textarea {
+   
+       border-radius: 9px;
+   }
+   
+   .stTextInput input:focus,
+   .stNumberInput input:focus {
+   
+       border-color: #2563eb;
+   
+       box-shadow:
+           0 0 0 1px #2563eb;
+   }
+   
+   
+   /* =========================================================
+      FORMS
+      ========================================================= */
+   
+   div[data-testid="stForm"] {
+   
+       background: #ffffff;
+   
+       border: 1px solid #e5e7eb;
+   
+       border-radius: 14px;
+   
+       padding: 24px;
+   
+       box-shadow:
+           0 3px 12px rgba(15, 23, 42, 0.035);
+   }
+   
+   
+   /* =========================================================
+      TABLES
+      ========================================================= */
+   
+   div[data-testid="stDataFrame"],
+   div[data-testid="stDataEditor"] {
+   
+       border-radius: 12px;
+   
+       overflow: hidden;
+   }
+   
+   
+   /* =========================================================
+      ALERTS
+      ========================================================= */
+   
+   div[data-testid="stAlert"] {
+   
+       border-radius: 10px;
+   }
+   
+   
+   /* =========================================================
+      PROGRESS
+      ========================================================= */
+   
+   .stProgress > div > div {
+   
+       border-radius: 10px;
+   }
+   
+   
+   /* =========================================================
+      AI PREDICTION CARD
+      ========================================================= */
+   
+   .prediction-card {
+   
+       background:
+           linear-gradient(
+               135deg,
+               #eff6ff,
+               #eef2ff
+           );
+   
+       border: 1px solid #c7d2fe;
+   
+       border-radius: 15px;
+   
+       padding: 26px;
+   
+       margin: 18px 0;
+   }
+   
+   .prediction-label {
+   
+       font-size: 13px;
+   
+       font-weight: 700;
+   
+       text-transform: uppercase;
+   
+       letter-spacing: 0.6px;
+   
+       color: #4f46e5;
+   }
+   
+   .prediction-value {
+   
+       font-size: 40px;
+   
+       font-weight: 800;
+   
+       color: #1e1b4b;
+   
+       margin-top: 5px;
+   }
+   
+   
+   /* =========================================================
+      INSIGHT CARDS
+      ========================================================= */
+   
+   .insight-card {
+   
+       background: #ffffff;
+   
+       border: 1px solid #e5e7eb;
+   
+       border-radius: 12px;
+   
+       padding: 18px;
+   
+       min-height: 105px;
+   }
+   
+   .insight-title {
+   
+       font-size: 14px;
+   
+       font-weight: 700;
+   
+       color: #111827;
+   }
+   
+   .insight-text {
+   
+       font-size: 13px;
+   
+       color: #6b7280;
+   
+       margin-top: 7px;
+   
+       line-height: 1.5;
+   }
+   
+   
+   /* =========================================================
+      SMALL LABELS / BADGES
+      ========================================================= */
+   
+   .badge {
+   
+       display: inline-block;
+   
+       padding: 5px 10px;
+   
+       border-radius: 20px;
+   
+       font-size: 11px;
+   
+       font-weight: 700;
+   
+       background: #eff6ff;
+   
+       color: #1d4ed8;
+   }
+   
+   
+   /* =========================================================
+      DIVIDERS
+      ========================================================= */
+   
+   hr {
+   
+       border: none;
+   
+       border-top: 1px solid #e5e7eb;
+   
+       margin: 25px 0;
+   }
+   
+   
+   /* =========================================================
+      PAGE TITLES
+      ========================================================= */
+   
+   .page-title {
+   
+       color: #111827;
+   
+       font-size: 32px;
+   
+       font-weight: 750;
+   
+       letter-spacing: -0.7px;
+   
+       margin-bottom: 6px;
+   }
+   
+   .page-subtitle {
+   
+       color: #6b7280;
+   
+       font-size: 14px;
+   
+       margin-bottom: 24px;
+   }
+   
+   
+   /* =========================================================
+      STREAMLIT BRANDING
+      ========================================================= */
+   
+   #MainMenu {
+   
+       visibility: hidden;
+   }
+   
+   footer {
+   
+       visibility: hidden;
+   }
+   
+   
+   /* =========================================================
+      MOBILE
+      ========================================================= */
+   
+   @media (max-width: 768px) {
+   
+       .block-container {
+   
+           padding: 1rem;
+       }
+   
+       .page-title {
+   
+           font-size: 27px;
+       }
+   
+       .dashboard-banner {
+   
+           padding: 22px;
+       }
+   
+       .dashboard-banner h1 {
+   
+           font-size: 25px;
+       }
+   
+       .metric-card {
+   
+           margin-bottom: 12px;
+       }
+   
+       .sidebar-brand-title {
+   
+           font-size: 19px;
+       }
+   
+       section[data-testid="stSidebar"]
+       .stRadio div[role="radiogroup"]
+       label p {
+   
+           font-size: 13px !important;
+       }
+   }
